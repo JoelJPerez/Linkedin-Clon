@@ -8,16 +8,16 @@ import BusinessCenterIcon from '@mui/icons-material/BusinessCenter';
 import NotificationsIcon from '@mui/icons-material/Notifications';
 import AppsIcon from '@mui/icons-material/Apps';
 import SearchIcon from '@mui/icons-material/Search';
-import './styles.css'
+import style from './styles.module.css'
 
 export const Header  = () => {
   return (
-    <header className="header"> 
-      <nav className="nav">
+    <header className={style.header}> 
+      <nav className={style.nav}>
 
-      <LinkedInIcon className="logo" />
+      <LinkedInIcon className={style.logo} />
 
-      <div className="header__buscar">
+      <div className={style.header__buscar}>
         <SearchIcon />
         <input type="text" placeholder=""></input>
       </div>
