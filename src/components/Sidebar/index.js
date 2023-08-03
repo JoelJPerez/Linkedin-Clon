@@ -2,8 +2,17 @@ import React from "react";
 import { Avatar } from "@mui/material";
 import TurnedInIcon from "@mui/icons-material/TurnedIn";
 import style from "./styles.module.css";
+import AddIcon from '@mui/icons-material/Add';
 
 export const Sidebar = () => {
+
+  const recentItem = (topic) => (
+    <div className={style.sidebar__recentItem}>
+      <span className={style.sidebar__hash}>#</span>
+      <p>{topic}</p>
+    </div>
+  )
+
   return (
     <div className={style.sidebar}>
       <div className={style.sidebar__top}>
@@ -40,7 +49,30 @@ export const Sidebar = () => {
       </div>
       <br/>
       <br/>
-      .sidebar__boton
+      <div className={style.sidebar__bottom}>
+        <ul>
+          <li>
+            <p>Grupos</p>
+          </li>
+          <li>
+            <p>Eventos</p>
+          </li>
+          <li>
+            <p>Hastags Seguidores</p>
+          </li>
+        </ul>
+        <AddIcon className={style.sidebar__box} />
+      </div>
+      <div className={style.sidebar__recent}>
+        <p>Recientes</p>
+        {recentItem("react.js")}
+        {recentItem("node.js")}
+        {recentItem("firebase.js")}
+        {recentItem("grasplq.js")}
+        {recentItem("developer")}
+        {recentItem("design")}
+      </div>
+
     </div>
   );
 };
