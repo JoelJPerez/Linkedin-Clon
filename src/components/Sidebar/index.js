@@ -18,12 +18,12 @@ export const Sidebar = () => {
       <div className={style.sidebar__top}>
         <img
           src="https://i.pinimg.com/550x/a4/0c/93/a40c932e1a3ba26aa3aedcd49b1dd268.jpg"
-          alt=""
+          alt="portada"
         />
 
         <Avatar className={style.sidebar__avatar} />
 
-        <h3>Joel</h3>
+        <h3>Joel dev</h3>
         <h4>joeldev@gmail.com</h4>
         <div className={style.sidebar__contents}>
           <div className={style.sidebar__cont}>
